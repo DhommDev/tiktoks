@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+      https://cordova.apache.org/docs/en/latest/
+  Some notes:
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+      * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="theme-color" content="#212121">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>TikDown</title>
+
+  
+  
+  
+  <!-- built styles file will be auto injected -->
+</head>
+<body>
+  
+  <div id="app">
+    
+
+    <div id="lod"></div>
+    <h1>TikDown</h1>
+    <div id="Contenair">
+      <!-- <input type="text" name="" id="uri" placeholder="URl"> -->
+      <div class="list list-strong-ios list-dividers-ios inset-ios">
+        <ul>
+          <li class="item-content item-input item-input-outline">
+            <div class="item-media">
+              <i class="icon demo-list-icon"></i>
+            </div>
+            <div class="item-inner">
+              <!-- <div class="item-title item-floating-label">Name</div> -->
+              <div class="item-input-wrap" >
+                <input class="resizable" type="text" id="uri" placeholder="Lien" required="required">
+                <span class="input-clear-button"></span>
+              </div>
+    
+            </div>
+            <button class="button button-tonal" id="envoyer"><i class="f7-icons">search</i></button>
+          </li>  
+        </ul>
+      </div>
+      <div id="téléchargeur">
+        
+    </div>
+  </div>
+  
+  
+  <script type="module" src="./js/app.js">
+  </script>
+</body>
+</html>
